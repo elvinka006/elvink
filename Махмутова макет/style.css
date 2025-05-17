@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Стили шапки */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 53px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+h1 {
+  display: grid;
+  place-items: center;
+  height: 10vh;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  margin-left: 117px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  width: 348px;
+  height: 57px;
+  padding-left: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("./img/search.png");
+}
+
+.wallet-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-left: 30px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 32px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 282px;
+  height: 403px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 21px;
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.bid-info {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eth-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.price-value {
+  font-weight: 600;
+}
+
+.bid-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+  margin-bottom: 100px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #1a202c;
+  border: 2.35px solid #141416;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+}
+
+.button:hover {
+  border: 2.35px solid #ffffff;
+  background-color: #141416;
+  color: white;
+}
+
+.button.active {
+  background-color: #141416;
+  color: white;
+}
+
+
+.footer {
+  width: 100%;
+  height: 345px;
+  background-color: #000000;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 30px;
+}
+
+.copyright {
+  color: #666;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 82px;
+}
+
+.social-icons a img {
+  width: 21px;
+  height: 21px;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+  opacity: 0.7;
+}
